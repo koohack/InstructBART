@@ -129,6 +129,6 @@ dmypy.json
 .pyre/
 
 # Data file
-.csv
+*.csv
 wandb/
 __pycache__/
