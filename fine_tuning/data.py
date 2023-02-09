@@ -76,3 +76,4 @@ def collate_fn(batch):
         "attention_mask":torch.cat(attention_mask, 0),
         "label_ids": torch.cat(label_ids, 0)
     }
+    

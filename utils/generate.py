@@ -18,7 +18,7 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 data = pd.read_csv("paired_data_v0.0.1.csv")
 
 model = MBartForConditionalGeneration.from_pretrained("facebook/mbart-large-50")
-model.load_state_dict(torch.load("/opt/ml/save/model/model-2.pt"))
+model.load_state_dict(torch.load("/opt/ml/save/model/model-40.pt"))
 model.to(device)
 
 tokenizer = AutoTokenizer.from_pretrained(
